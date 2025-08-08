@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add / Save Customer Models</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>➕ Add / Save Customer Models</h2>
+    <form id="customerForm">
+      <label for="customerName">Customer Name:</label>
+      <input type="text" id="customerName" required />
+
+      <h3>Outdoor Models</h3>
+      <div id="outdoorModels"></div>
+      <button type="button" onclick="addModel('outdoor')">Add Outdoor Model</button>
+
+      <h3>Indoor Models</h3>
+      <div id="indoorModels"></div>
+      <button type="button" onclick="addModel('indoor')">Add Indoor Model</button>
+
+      <br/><br/>
+      <button type="submit">💾 Save</button>
+      <button type="button" onclick="deleteCustomer()">🗑️ Delete Customer</button>
+    </form>
+    <div id="response"></div>
+    <a href="index.html">⬅ Back</a>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

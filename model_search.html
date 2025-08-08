@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Model Search</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h2>🔎 Search by Model No.</h2>
+    <input type="text" id="modelInput" onkeyup="filterModels()" placeholder="Enter model number..."/>
+    <select id="modelDropdown" onchange="searchModel()"></select>
+    <pre id="modelResults"></pre>
+    <a href="index.html">⬅ Back</a>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

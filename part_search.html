@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Part Search</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h2>🔍 Search by Part Number</h2>
+    <input type="text" id="partInput" onkeyup="filterParts()" placeholder="Enter part number..."/>
+    <select id="partDropdown" onchange="searchPart()"></select>
+    <pre id="partResults"></pre>
+    <button onclick="exportPartPDF()">📄 Export PDF</button>
+    <button onclick="exportPartExcel()">📊 Export Excel</button>
+    <a href="index.html">⬅ Back</a>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
